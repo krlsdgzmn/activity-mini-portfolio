@@ -1,13 +1,13 @@
 import Box from "@mui/material/Box";
+import Rating from "@mui/material/Rating";
 import HeaderName from "./HeaderName";
-import Ratings from "./Ratings";
 import TabsMenu from "./TabsMenu";
 
 export default function RightHeroSection() {
   return (
     <Box component={"section"} sx={rightSectionStyle}>
       <HeaderName />
-      <Ratings />
+      <Rating max={20} value={20} readOnly />
       <TabsMenu />
     </Box>
   );
